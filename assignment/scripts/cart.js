@@ -35,6 +35,11 @@ function isFull( basket ){
     }
 }
 
+function removeItem( item ){
+    basket.indexOf( item );
+    basket.splice ( item );
+}
+
 console.log( 'Adding apples (expect true)', addItem( 'apple' ));
 console.log( 'Adding bananas (expect true)', addItem( 'banana' ));
 console.log( 'Adding carrot (expect true)', addItem( 'carrot' ));
@@ -46,7 +51,8 @@ console.log( 'Listing items in basket', basket );
 console.log( 'Using function to list items' );
 listItems(basket)
 
-
+//removeItem( 'beef' );
+//console.log( basket );
 
 console.log( 'Number of items in basket', basket.length );
 console.log( 'Using function to empty array', empty(basket) );
